@@ -20,3 +20,24 @@ sources:
         loaded_at_field: created_at
         description: >
           Contains demographic information about each superhero
+      - name: addresses
+        description: >
+          Contains addresses
+      - name: events
+        description: >
+          contains event infomration
+      - name: order_items
+        description: >
+          Contains order order_items
+      - name: orders
+        description: >
+          contains order information
+      - name: products
+        description: >
+          contains product information
+      - name: promos
+        desctiption: >
+          contains promotions
+      - name: users
+        description: >
+          contains users
