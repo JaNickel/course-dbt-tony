@@ -1,0 +1,1 @@
+select count(distinct user_id) from stg_users;  --130
