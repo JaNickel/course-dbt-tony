@@ -7,6 +7,7 @@
 SELECT 
     order_id,
     promo_id,
+    user_id,
     address_id,
     created_at,
     order_cost,

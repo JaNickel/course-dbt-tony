@@ -13,6 +13,5 @@ with source_data as (
     group by user_id
 
 )
-
 select *
 from source_data
