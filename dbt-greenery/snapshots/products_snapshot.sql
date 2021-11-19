@@ -3,10 +3,8 @@
   {{
     config(
       target_schema='snapshots',
-      unique_key='product_id',
-
       strategy='check',
-      unique_key='id',
+      unique_key='product_id',
       check_cols=['name', 'price', 'quantity'],
     )
   }}

@@ -3,9 +3,8 @@
   {{
     config(
       target_schema='snapshots',
-      unique_key='id',
-
       strategy='timestamp',
+      unique_key='id',
       updated_at='updated_at'
     )
   }}

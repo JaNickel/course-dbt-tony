@@ -3,10 +3,8 @@
   {{
     config(
       target_schema='snapshots',
-      unique_key='promo_id',
-
       strategy='check',
-      unique_key='id',
+      unique_key='promo_id',
       check_cols=['discount', 'status'],
     )
   }}

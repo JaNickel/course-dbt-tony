@@ -3,10 +3,8 @@
   {{
     config(
       target_schema='snapshots',
-      unique_key='address_id',
-
       strategy='check',
-      unique_key='id',
+      unique_key='address_id',
       check_cols=['address', 'zipcode', 'state', 'country'],
     )
   }}
@@ -15,4 +13,3 @@
   FROM {{ source('tutorial', 'addresses') }}
 
 {% endsnapshot %}
-
