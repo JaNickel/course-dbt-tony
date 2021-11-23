@@ -34,7 +34,8 @@ Yes
 Yes
 
 4.What was most challenging/surprising in completing this week’s project?
-Getting used to the version of vs code.
+getting q1 and q4 to agree.
+psql syntax
 
 5.Is there anywhere you are still stuck or confused? Or Is there a particular part of the project where you want focused feedback from your reviewers?
 No
