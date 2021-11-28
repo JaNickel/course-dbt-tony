@@ -14,4 +14,6 @@ SELECT
     created_at,
     updated_at,
     address_id
+
+
 FROM {{ ref('stg_users') }}

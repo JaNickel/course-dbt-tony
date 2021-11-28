@@ -6,7 +6,9 @@
 
 with source_data as (
 
-select dbt_tony_nickel.orders_per_user.order_count, dbt_tony_nickel.stg_products.name, count(1) as ctr 
+select dbt_tony_nickel.orders_per_user.order_count, 
+      dbt_tony_nickel.stg_products.name, 
+      count(1) as ctr 
 from dbt_tony_nickel.orders_per_user, 
      dbt_tony_nickel.stg_products, 
      dbt_tony_nickel.stg_orders, 
