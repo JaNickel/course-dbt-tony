@@ -13,4 +13,19 @@ models:
           - positive_values
       - name: weight
         tests:
+          - positive_value
+  - name: stg_promos
+    description: promotion information. discounts are positive values 
+    columns:
+      - name: discount
+        tests:
+         - positive_value
+  - name: stg_products
+    description: product descriptions
+    columns:
+      - name: price
+        tests:
           - positive_values
+      - name: quantity
+        tests:
+          - positive_value
