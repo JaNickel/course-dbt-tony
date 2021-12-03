@@ -1,7 +1,7 @@
 /*
     count the number of sesson and the time difference start and end
 */
-
+ 
 {{ config(materialized='table') }}
 
 with source_data as (

@@ -3,7 +3,7 @@
     materialized='table'
   )
 }}
-
+ 
 SELECT 
     id AS superhero_id,
     name,

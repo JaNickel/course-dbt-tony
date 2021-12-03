@@ -2,7 +2,7 @@
 /*
     count the number of users with more than one order / total users
 */
-
+ 
 {{ config(materialized='table') }}
 
 with source_data as (

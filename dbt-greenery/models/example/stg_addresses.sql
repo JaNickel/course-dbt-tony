@@ -3,7 +3,7 @@
     materialized='table'
   )
 }}
-
+ 
 SELECT 
     address_id,
     address,

@@ -3,7 +3,7 @@
     materialized='table'
   )
 }}
-
+ 
 SELECT 
     promo_id,
     discout,
