@@ -6,15 +6,13 @@
 
 with source_data as (
 
-select sum(case when events.event_type='page_view' then 1 end) as page_views
---,
---       sum(case when events.event_type='checkout' then 1 end) as checkouts,
---       count(distinct events.session_id) as sessions,
---       count(distinct orders.order_id) as order_count
+select sum(case when events.event_type='page_view' then 1 end) as page_views,
+       sum(case when events.event_type='checkout' then 1 end) as checkouts,
+       count(distinct events.session_id) as sessions,
+       count(distinct orders.order_id) as order_count
       
-FROM {{ ref('stg_events') }} events
---,
---     {{ ref('stg_orders') }} orders
+FROM {{ ref('stg_events') }} events,
+     {{ ref('stg_orders') }} orders
 
 )
 select * 
