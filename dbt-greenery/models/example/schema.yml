@@ -12,3 +12,8 @@ models:
   - name: dim_orders
   - name: orders_per_user
   - name: repeat_rate 
+macros: 
+  - name: get_page_part
+    arguments:
+    - name: url_str
+      type: string

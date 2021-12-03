@@ -6,18 +6,20 @@
 
 with source_data as (
     select
-        product.user_id,
         product.product_id,
         product.name,
         product.price,
         product.quantity,
-        product.order_id,
-        events.session_id,
-        events.page_url,
-        events.event_type
-    FROM {{ ref('products_ordered') }} product
-        JOIN {{ ref('stg_events') }} events
-            ON product.user_id = events.user_id  -- limit to sessions of customers who buy things
+        sum(case when events.event_type='add_to_cart' then 1 end) as order_ctr,
+        count(distinct events.session_id) as session_ctr
+    FROM  {{ ref('dim_events') }} events
+      JOIN {{ ref('stg_products') }} product
+            ON product.product_id = events.page_id  -- limit to sessions of customers who buy things
+    GROUP BY 
+        product.product_id,
+        product.name,
+        product.price,
+        product.quantity
+
 )
 select * from source_data
-
