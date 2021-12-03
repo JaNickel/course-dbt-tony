@@ -43,3 +43,4 @@ select name, order_ctr, session_ctr, (order_ctr*1.0)/(session_ctr*1.0) as conv_r
 (2) We’re getting really excited about dbt macros after learning more about them and want to apply them to improve our dbt project.
 Create a macro to simplify part of a model(s). Think about what would improve the usability or modularity of your code by applying a macro. Large case statements, or blocks of SQL that are often repeated make great candidates. Document the macro(s) using a .yml file in the macros directory.
 Note: One potential macro in our data set is aggregating event types per session. Start here as your first macro and add other macros if you want to go further.
+    Created a macro to get the product id from the page_url
