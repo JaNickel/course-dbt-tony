@@ -1,4 +1,14 @@
-
 version: 2
 
-
+models: 
+  - name: dim_users
+    description: "Users dimension table ... "
+    columns:
+      - name: user_id
+        description: "This is the user unique id for the table"
+        tests:
+          - unique
+          - not_null
+  - name: dim_orders
+  - name: orders_per_user
+  - name: repeat_rate 

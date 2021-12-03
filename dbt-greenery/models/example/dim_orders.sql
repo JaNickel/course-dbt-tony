@@ -26,7 +26,6 @@ FROM {{ ref('stg_orders') }} orders
 LEFT JOIN {{ ref('dim_active_promos') }} promos
   ON orders.promo_id = promos.promo_id
 
-
 )
 
 select * from source_data
