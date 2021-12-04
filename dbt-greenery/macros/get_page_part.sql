@@ -1,4 +1,6 @@
+{% macro get_page_part(page_url) %}
 
-{% macro get_page_part(url_str) %}
-   (reverse(left(reverse({{url_str}}), position('/' in reverse({{url_str}}))-1)))
+   reverse(
+      (left(reverse(page_url), position('/' in reverse(page_url))-1))
+   )
 {% endmacro %}

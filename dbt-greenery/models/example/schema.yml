@@ -15,5 +15,5 @@ models:
 macros: 
   - name: get_page_part
     arguments:
-    - name: url_str
+    - name: page_url
       type: string

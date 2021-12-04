@@ -1,0 +1,4 @@
+version: 2
+
+on-run-end:
+  - "grant usage on {{ this }} to role reporter"
