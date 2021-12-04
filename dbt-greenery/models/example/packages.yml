@@ -1,0 +1,10 @@
+version: 2
+
+packages:
+  - package: dbt-labs/snowplow
+    version: 0.7.0
+
+  - git: "https://github.com/dbt-labs/dbt-utils.git"
+    revision: 0.1.21
+
+  - local: /opt/dbt/redshift
