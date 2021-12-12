@@ -17,3 +17,17 @@ macros:
     arguments:
     - name: page_url
       type: string
+
+exposures:  
+  - name: fact_event_rates
+    description: >
+      Models that provide metrics for funnel
+    type: dashboard
+    maturity: high
+    owner:
+      name: Tony Nickel
+      email: janickel@ucsc.edu
+    depends_on:
+      - ref('stg_events')
+      - ref('session_events')
+      - ref('fact_event_rates')
